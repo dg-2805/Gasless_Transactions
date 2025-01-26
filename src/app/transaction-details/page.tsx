@@ -19,7 +19,6 @@ export default function TransactionDetails() {
   const [recipientAddress, setRecipientAddress] = useState("");
   const [tokenAmount, setTokenAmount] = useState("");
   const [tokenId, setTokenId] = useState("");
-  const [tokenAddress, setTokenAddress] = useState("");
   const [transactionStatus, setTransactionStatus] = useState<
     "idle" | "pending" | "success" | "error"
   >("idle");
@@ -48,39 +47,20 @@ export default function TransactionDetails() {
           <Label htmlFor="tokenType">Token Type</Label>
           <Select
             onValueChange={(value: "ERC20" | "ERC721") => setTokenType(value)}
+            defaultValue="ERC20"
           >
             <SelectTrigger>
               <SelectValue placeholder="Select token type" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="ERC20">ERC-20</SelectItem>
-              <SelectItem value="ERC721">ERC-721</SelectItem>
+            <SelectContent className="bg-white text-black">
+              <SelectItem value="ERC20" className="hover:bg-gray-200">
+                ERC-20
+              </SelectItem>
+              <SelectItem value="ERC721" className="hover:bg-gray-200">
+                ERC-721
+              </SelectItem>
             </SelectContent>
           </Select>
-        </div>
-
-        <div>
-          <Label htmlFor="tokenAddress">Token Address</Label>
-          <Input
-            id="tokenAddress"
-            type="text"
-            placeholder="Enter token contract address"
-            value={tokenAddress}
-            onChange={(e) => setTokenAddress(e.target.value)}
-            className="w-full"
-          />
-        </div>
-
-        <div>
-          <Label htmlFor="recipient">Recipient Address</Label>
-          <Input
-            id="recipient"
-            type="text"
-            placeholder="Enter recipient's wallet address"
-            value={recipientAddress}
-            onChange={(e) => setRecipientAddress(e.target.value)}
-            className="w-full"
-          />
         </div>
 
         {tokenType === "ERC20" ? (
@@ -92,7 +72,7 @@ export default function TransactionDetails() {
               placeholder="Enter the token amount"
               value={tokenAmount}
               onChange={(e) => setTokenAmount(e.target.value)}
-              className="w-full"
+              className="w-full text-black"
             />
           </div>
         ) : (
@@ -104,15 +84,27 @@ export default function TransactionDetails() {
               placeholder="Enter the token ID"
               value={tokenId}
               onChange={(e) => setTokenId(e.target.value)}
-              className="w-full"
+              className="w-full text-black"
             />
           </div>
         )}
 
+        <div>
+          <Label htmlFor="recipient">Recipient Address</Label>
+          <Input
+            id="recipient"
+            type="text"
+            placeholder="Enter recipient's wallet address"
+            value={recipientAddress}
+            onChange={(e) => setRecipientAddress(e.target.value)}
+            className="w-full text-black"
+          />
+        </div>
+
         <div className="pt-4">
           <Button
             type="submit"
-            className="w-full bg-green-500 hover:bg-green-600 text-black"
+            className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
             disabled={transactionStatus === "pending"}
           >
             {transactionStatus === "pending"
