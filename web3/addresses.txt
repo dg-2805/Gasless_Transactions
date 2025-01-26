@@ -1,0 +1,3 @@
+Gasless Token deployed at: 0xe5da5a7B250E68eF69d40b9799bede9491C14a67
+Gasless NFT deployed at: 0x44378e1beefC422568ABa878c74168369e4840C6
+Gasless Forwarder deployed at: 0x086C097E6e82CC076828C94d4F433976B69ee56b
