@@ -49,14 +49,14 @@ export default function TransactionDetails() {
             onValueChange={(value: "ERC20" | "ERC721") => setTokenType(value)}
             defaultValue="ERC20"
           >
-            <SelectTrigger>
+            <SelectTrigger className="text-white bg-gray-800">
               <SelectValue placeholder="Select token type" />
             </SelectTrigger>
-            <SelectContent className="bg-white text-black">
-              <SelectItem value="ERC20" className="hover:bg-gray-200">
+            <SelectContent className="bg-gray-800 text-white">
+              <SelectItem value="ERC20" className="hover:bg-gray-700">
                 ERC-20
               </SelectItem>
-              <SelectItem value="ERC721" className="hover:bg-gray-200">
+              <SelectItem value="ERC721" className="hover:bg-gray-700">
                 ERC-721
               </SelectItem>
             </SelectContent>
@@ -72,7 +72,7 @@ export default function TransactionDetails() {
               placeholder="Enter the token amount"
               value={tokenAmount}
               onChange={(e) => setTokenAmount(e.target.value)}
-              className="w-full text-black"
+              className="w-full text-white placeholder-gray-400 bg-gray-800"
             />
           </div>
         ) : (
@@ -84,7 +84,7 @@ export default function TransactionDetails() {
               placeholder="Enter the token ID"
               value={tokenId}
               onChange={(e) => setTokenId(e.target.value)}
-              className="w-full text-black"
+              className="w-full text-white placeholder-gray-400 bg-gray-800"
             />
           </div>
         )}
@@ -97,7 +97,7 @@ export default function TransactionDetails() {
             placeholder="Enter recipient's wallet address"
             value={recipientAddress}
             onChange={(e) => setRecipientAddress(e.target.value)}
-            className="w-full text-black"
+            className="w-full text-white placeholder-gray-400 bg-gray-800"
           />
         </div>
 
