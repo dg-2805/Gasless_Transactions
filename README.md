@@ -1,15 +1,14 @@
-```markdown
-# Aether - Gasless Transactions Platform
+# 🌌 Aether - Gasless Transactions Platform
 
 Aether is a decentralized platform enabling **gasless transactions** for ERC-20 and ERC-721 tokens. Built with **Solidity**, **Hardhat**, **WAGMI**, **RainbowKit**, and **Next.js**, it provides a seamless user experience where users can connect their wallets and send tokens without worrying about gas fees.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- **Gasless Transactions**: Send ERC-20 and ERC-721 tokens without paying gas fees.
-- **Wallet Integration**: Effortlessly connect wallets using WAGMI and RainbowKit.
-- **Modern Tech Stack**: Combines Solidity, Hardhat, and Next.js for secure and efficient operations.
+- 🚀 **Gasless Transactions**: Send ERC-20 and ERC-721 tokens without paying gas fees.  
+- 🛡️ **Wallet Integration**: Effortlessly connect wallets using WAGMI and RainbowKit.  
+- ⚡ **Modern Tech Stack**: Combines Solidity, Hardhat, and Next.js for secure and efficient operations.
 
 ---
 
@@ -17,20 +16,19 @@ Aether is a decentralized platform enabling **gasless transactions** for ERC-20 
 
 Ensure the following are installed:
 
-- [Node.js](https://nodejs.org/) (v16+ recommended)
-- npm or yarn
+- [Node.js](https://nodejs.org/) (v16+ recommended)  
+- npm or yarn  
 - [Git](https://git-scm.com/)
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/dg-2805/Gasless_Transactions.git
 cd aether
-```
 
 ### 2. Install Dependencies
 
