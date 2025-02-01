@@ -64,9 +64,18 @@ npx hardhat run scripts/deploy.js --network <network_name>
 
 Replace `<network_name>` with your target blockchain (e.g., `goerli`, `mainnet`, or `polygon`).
 
-Token.sol deployed at: ```0xe5da5a7B250E68eF69d40b9799bede9491C14a67```
-NFTcontract.sol deployed at: ```0x44378e1beefC422568ABa878c74168369e4840C6```
-Forwarder.sol deployed at: ```0x086C097E6e82CC076828C94d4F433976B69ee56b```
+Token.sol deployed at:
+ ```bash
+ 0xe5da5a7B250E68eF69d40b9799bede9491C14a67
+ ```
+NFTcontract.sol deployed at: 
+```bash
+0x44378e1beefC422568ABa878c74168369e4840C6
+```
+Forwarder.sol deployed at: 
+```bash
+0x086C097E6e82CC076828C94d4F433976B69ee56b
+```
 
 ### 5. Start the Development Server
 
